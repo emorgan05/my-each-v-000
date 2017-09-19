@@ -1,12 +1,12 @@
 def my_each(array)
   i = 0
   while i < array.length
-    yield(item)
+    yield(array)
     i += 1
   end
   array
 end
 
-my_each([1, 2, 3, 4]) do |item|
-  "#{item}"
+my_each([1, 2, 3, 4]) do |number|
+  "#{number}"
 end
